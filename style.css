@@ -1,0 +1,389 @@
+@font-face {
+    font-family: machina;
+    src: url(./assets/NeueMachina.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy-Medium;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+.section1{
+    height: 120%;
+    width: 100%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+nav h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+nav h4{
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav button{
+    padding: 15px 30px;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+nav h1 i{
+    display: inline-block;
+    rotate: 45deg;
+    font-size: 55px;
+}
+.center{
+    padding: 60px;
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+.center-part1{
+    height: 100%;
+    width: 40%;
+}
+.center-part1 h1{
+    font-size: 55px;
+    font-family: machina;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.center-part1 p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.center-part1 button{
+    padding: 15px 30px;
+    background-color: #000;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.center-part2{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+.center-part2 img{
+    position: absolute;
+    right: 0;
+    height: 80%;
+}
+.section1bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    margin-top: -120px;
+}
+.section1bottom img{
+    height: 80px;
+}
+.section1bottom img:first-child{
+    height: 35px;
+}
+.section1bottom img:nth-child(2){
+    height: 120px;
+}
+.services{
+    display: flex;
+    padding: 40px 80px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: -60px;
+}
+.services h3{
+    background-color: #B9FF66;
+    font-weight: 500;
+    padding: 2px 5px;
+    font-size: 35px;
+    border-radius: 5px;
+    font-family: machina;
+}
+.services p{
+    width: 60%;
+    font-size: 17px;
+}
+.container{
+    height: 80%;
+    width: 100%;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.elem{
+    height: 300px;
+    width: 48%;
+    border: 2px solid black;
+    flex-shrink: 0;
+    border-radius: 35px;
+    box-shadow: 0px 7px black;
+    padding: 40px;
+    display: flex;
+}
+.elem-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+}
+.elem-part1 h2{
+    font-size: 30px;
+}
+.elem-part1 h2 span{
+    font-family: machina;
+    background-color: #B9FF66;
+    padding: 5px;
+    border-radius: 5px;
+}
+.elem-part1 h4{
+    font-size: 17px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem-part1 h4:hover{
+    color: #898989;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.elem-part1 h4 i{
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid black;
+}
+.elem-part2{
+    height: 100%;
+    width: 50%;
+}
+.elem-part2 img{
+    height: 100%;
+    width: 100%;
+}
+.green{
+    background-color: #B9FF66;
+    color: white;
+}
+.green .elem-part1 h4{
+    color: black;
+}
+.black{
+    background-color: black;
+    color: white;
+    border: 2px solid gray;
+}
+.black .elem-part1 h2 span, .green .elem-part1 h2 span{
+    background-color: white;
+    color: black;
+}
+.black .elem-part1 h4 i{
+    color:  black;
+    background-color: white;
+}
+.elem-part1 h4:hover i{
+    background-color: #B9FF66;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+/* ---------------- Responsive Design ---------------- */
+
+/* Tablets (width up to 1024px) */
+@media (max-width: 1024px) {
+    nav {
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px 40px;
+      align-items: flex-start;
+    }
+  
+    .part2 {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  
+    .center {
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px;
+      height: auto;
+    }
+  
+    .center-part1, .center-part2 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .center-part2 img {
+      position: static;
+      height: auto;
+      width: 100%;
+    }
+  
+    .section1bottom {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 40px;
+      margin-top: 20px;
+    }
+  
+    .section1bottom img {
+      height: 60px;
+    }
+  
+    .section1bottom img:nth-child(2) {
+      height: 90px;
+    }
+  
+    .services {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 40px;
+    }
+  
+    .services p {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .container {
+      padding: 30px 40px;
+      gap: 30px;
+    }
+  
+    .elem {
+      width: 100%;
+    }
+  }
+  
+  /* Mobiles (width up to 768px) */
+  @media (max-width: 768px) {
+    nav h1 {
+      font-size: 32px;
+    }
+  
+    nav h1 i {
+      font-size: 38px;
+    }
+  
+    nav button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .part2 h4 {
+      font-size: 16px;
+    }
+  
+    .center-part1 h1 {
+      font-size: 36px;
+    }
+  
+    .center-part1 p {
+      font-size: 16px;
+    }
+  
+    .center-part1 button {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+  
+    .services h3 {
+      font-size: 25px;
+    }
+  
+    .services p {
+      font-size: 14px;
+    }
+  
+    .elem {
+      flex-direction: column;
+      height: auto;
+      padding: 25px;
+      border-radius: 25px;
+    }
+  
+    .elem-part1,
+    .elem-part2 {
+      width: 100%;
+    }
+  
+    .elem-part1 h2 {
+      font-size: 24px;
+    }
+  
+    .elem-part1 h4 {
+      font-size: 15px;
+    }
+  
+    .elem-part1 h4 i {
+      font-size: 20px;
+    }
+  
+    .elem-part2 img {
+      height: auto;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Tiny Devices (width up to 480px) */
+  @media (max-width: 480px) {
+    nav {
+      padding: 20px;
+    }
+  
+    .center {
+      padding: 20px;
+    }
+  
+    .services {
+      padding: 20px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .section1bottom {
+      padding: 20px;
+    }
+  }
+  
